@@ -15,6 +15,7 @@
 
 ### 技術スタック
 | フロントエンド | Next.js (App Router), TypeScript, Tailwind CSS |
+| --- | --- |
 | 認証 | NextAuth.js or AWS Cognito |
 | バックエンド/API | Next.js API Routes or AWS Lambda |
 | DB | DynamoDB |
