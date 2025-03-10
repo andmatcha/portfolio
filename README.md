@@ -46,3 +46,16 @@ export type Project = {
   createdAt: string;
 };
 ```
+
+## テーブル設計(DynamoDB)
+| 属性名 | 型 | 説明 |
+| --- | --- | --- |
+| projectId | Partition Key (PK) | UUID（ユニークID） |
+| title | String | プロジェクト名 |
+| thumbnailUrl | String | S3の画像URL |
+| startDate | String | 例）"2024-12" |
+| endDate | String | 任意 |
+| description | String | 概要説明文 |
+| tags | List | タグ一覧 |
+| images | List | サムネイル以外の補足画像(任意) |
+| createdAt | String | ISO形式 "2025-03-11T..." |
