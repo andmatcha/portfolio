@@ -24,3 +24,25 @@
 | メール | AWS SES |
 | デプロイ | Vercel / Amplify / ECS+ALB |
 | CI/CD | GitHub Actions or Amplify CI/CD |
+
+## 型定義(TypeScript)
+
+```ts
+// types/project.ts
+export type Image = {
+  label: string;
+  imageUrl: string;
+};
+
+export type Project = {
+  projectId: string;
+  title: string;
+  thumbnailUrl: string;
+  startDate: string; // "2024-12"
+  endDate?: string;
+  description: string;
+  tags: string[];
+  images?: Image[];
+  createdAt: string;
+};
+```
