@@ -13,9 +13,15 @@ const About = ({ changeTab }: Props) => {
         <h2 className="text-3xl md:text-4xl">ABOUT</h2>
         <section className="px-2 py-2">
           <h3 className="text-2xl md:text-3xl mb-2">Profile</h3>
-          <div className="px-2 text-sm md:text-base">
-            <p>青柳 仁 Aoyagi Jin</p>
-            <p>慶應義塾大学理工学部電気情報工学科2年</p>
+          <div className="px-2 text-sm md:text-base flex items-center gap-2 md:gap-4">
+            <div className="w-20 sm:w-24 h-20 sm:h-24 rounded-full overflow-hidden">
+              <img src="/profile.jpg" alt="" />
+            </div>
+            <div className="flex flex-col gap-1">
+              <p className="text-xl md:text-2xl">青柳 仁 Aoyagi Jin</p>
+              <p className="text-sm pl-2">Web Developer</p>
+              <p className="text-xs sm:text-sm pl-2">慶應義塾大学理工学部<br className="sm:hidden" />電気情報工学科2年</p>
+            </div>
           </div>
         </section>
         <section className="px-2 py-2">
