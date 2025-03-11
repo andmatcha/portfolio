@@ -53,32 +53,32 @@ const About = ({ changeTab }: Props) => {
         <section className="px-2 py-2">
           <h3 className="text-2xl md:text-3xl mb-2">Skills</h3>
           <ul className="text-sm md:text-base px-2 w-2/3">
-            <li className="flex justify-between">
-              <span>HTML5/CSS3</span>
+            <li className="flex">
+              <span className="w-40">HTML5/CSS3</span>
               <span>■■■■■■■■□□</span>
             </li>
-            <li className="flex justify-between">
-              <span>JavaScript</span>
+            <li className="flex">
+              <span className="w-40">JavaScript</span>
               <span>■■■■■■■■□□</span>
             </li>
-            <li className="flex justify-between">
-              <span>TypeScript</span>
+            <li className="flex">
+              <span className="w-40">TypeScript</span>
               <span>■■■■■■■□□□</span>
             </li>
-            <li className="flex justify-between">
-              <span>React</span>
+            <li className="flex">
+              <span className="w-40">React</span>
               <span>■■■■■■■□□□</span>
             </li>
-            <li className="flex justify-between">
-              <span>Next.js</span>
+            <li className="flex">
+              <span className="w-40">Next.js</span>
               <span>■■■■■■■□□□</span>
             </li>
-            <li className="flex justify-between">
-              <span>PHP</span>
+            <li className="flex">
+              <span className="w-40">PHP</span>
               <span>■■■■■■□□□□</span>
             </li>
-            <li className="flex justify-between">
-              <span>Laravel</span>
+            <li className="flex">
+              <span className="w-40">Laravel</span>
               <span>■■■■■■□□□□</span>
             </li>
           </ul>
