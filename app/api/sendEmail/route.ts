@@ -16,7 +16,7 @@ export async function POST(req: NextRequest) {
   // メール送信の設定
   const mailOptions = {
     from: process.env.GMAIL_USER,
-    to: process.env.RECIPIENT_EMAIL,
+    to: process.env.GMAIL_USER,
     subject: `[PORTFOLIO] ${name} 様からの新規メッセージ`,
     text: `お名前: ${name}\nメールアドレス: ${email}\n\nお問い合わせ内容:\n${message}`,
   };
@@ -28,7 +28,7 @@ export async function POST(req: NextRequest) {
   } catch (error) {
     console.error("Error sending email:", error);
     return NextResponse.json(
-      { error: "Failed to send email" },
+      { error: `Failed to send email: ${error}` },
       { status: 500 }
     );
   }

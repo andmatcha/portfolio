@@ -96,6 +96,7 @@ const Contact = () => {
       } else {
         setStatus("failed");
       }
+      console.log(result)
     }
   };
 
