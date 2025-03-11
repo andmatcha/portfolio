@@ -59,3 +59,13 @@ export type Project = {
 | tags | List | タグ一覧 |
 | images | List | サムネイル以外の補足画像(任意) |
 | createdAt | String | ISO形式 "2025-03-11T..." |
+
+
+## API設計
+| メソッド | パス | 説明 |
+| --- | --- | ---|
+| GET | /api/projects | 全プロジェクト一覧を取得 |
+| GET | /api/projects/[id] | 特定プロジェクト詳細取得 |
+| POST | /api/projects | プロジェクトを新規追加（管理画面）|
+| PUT | /api/projects/[id] | プロジェクト更新 |
+| DELETE | /api/projects/[id] | プロジェクト削除 |
