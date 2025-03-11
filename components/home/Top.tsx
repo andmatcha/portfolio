@@ -15,9 +15,24 @@ export default function Top({ changeTab }: Props) {
       </div>
       <div className="absolute bottom-1/4 left-10 md:left-1/2 transform md:-translate-x-1/2">
         <ul className="flex flex-col gap-2 md:gap-16 md:flex-row">
-          <li className="cursor-pointer" onClick={() => changeTab("about")}>ABOUT</li>
-          <li className="cursor-pointer" onClick={() => changeTab("works")}>WORKS</li>
-          <li className="cursor-pointer" onClick={() => changeTab("contact")}>CONTACT</li>
+          <li
+            onClick={() => changeTab("about")}
+            className="cursor-pointer hover:text-sky-500 transition-all duration-300"
+          >
+            ABOUT
+          </li>
+          <li
+            onClick={() => changeTab("works")}
+            className="cursor-pointer hover:text-sky-500 transition-all duration-300"
+          >
+            WORKS
+          </li>
+          <li
+            onClick={() => changeTab("contact")}
+            className="cursor-pointer hover:text-sky-500 transition-all duration-300"
+          >
+            CONTACT
+          </li>
         </ul>
       </div>
     </div>
