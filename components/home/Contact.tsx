@@ -43,7 +43,7 @@ const Contact = () => {
     if (!formData.name.trim()) {
       newErrors.name = "お名前は必須です";
       isValid = false;
-    } else if (formData.name.length <= 60) {
+    } else if (formData.name.length > 60) {
       newErrors.name = "お名前は60文字以内で入力してください";
       isValid = false;
     }
@@ -56,7 +56,7 @@ const Contact = () => {
     } else if (!emailRegex.test(formData.email)) {
       newErrors.email = "正しいメールアドレスを入力してください";
       isValid = false;
-    } else if (formData.email.length <= 254) {
+    } else if (formData.email.length > 254) {
       newErrors.email = "正しいメールアドレスを入力してください";
       isValid = false;
     }
@@ -65,7 +65,7 @@ const Contact = () => {
     if (!formData.message.trim()) {
       newErrors.message = "お問い合わせ内容は必須です";
       isValid = false;
-    } else if (formData.message.length <= 1000) {
+    } else if (formData.message.length > 1000) {
       newErrors.message = "お問い合わせ内容は1000文字以内で入力してください";
       isValid = false;
     }
