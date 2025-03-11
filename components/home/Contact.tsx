@@ -21,18 +21,6 @@ const Contact = () => {
   });
   // メール送信のステータス
   const [status, setStatus] = useState<string>("");
-  // CSRFトークン
-  const [csrfToken, setCsrfToken] = useState<string>("");
-
-  // CSRFトークンを取得する
-  useEffect(() => {
-    const fetchCsrfToken = async () => {
-      const res = await fetch("/api/getCsrfToken");
-      const data = await res.json();
-      setCsrfToken(data.csrfToken);
-    };
-    fetchCsrfToken();
-  }, []);
 
   // フォームのバリデーション
   const validateForm = (): boolean => {
@@ -99,7 +87,6 @@ const Contact = () => {
         },
         body: JSON.stringify({
           ...sanitizedData,
-          csrfToken: csrfToken, // CSRFトークンも送信
         }),
       });
 

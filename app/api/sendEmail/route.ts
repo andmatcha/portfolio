@@ -1,3 +1,4 @@
+import "server-only";
 import nodemailer from "nodemailer";
 import { NextRequest, NextResponse } from "next/server";
 
@@ -10,12 +11,7 @@ const transporter = nodemailer.createTransport({
 });
 
 export async function POST(req: NextRequest) {
-  const { name, email, message, csrfToken } = await req.json();
-
-  // CSRFトークンの検証
-  if (csrfToken !== process.env.CSRF_TOKEN) {
-    return NextResponse.json({ error: "Invalid CSRF token" }, { status: 400 });
-  }
+  const { name, email, message } = await req.json();
 
   // メール送信の設定
   const mailOptions = {
