@@ -1,3 +1,5 @@
+import RatingBar from "../common/RatingBar";
+
 const About = () => {
   return (
     <div className="px-4 md:px-40 pt-16 md:pt-20">
@@ -56,31 +58,31 @@ const About = () => {
         <ul className="text-sm md:text-base px-2 w-2/3">
           <li className="flex">
             <span className="w-40">HTML5/CSS3</span>
-            <span>■■■■■■■■□□</span>
+            <RatingBar value={8} />
           </li>
           <li className="flex">
             <span className="w-40">JavaScript</span>
-            <span>■■■■■■■■□□</span>
+            <RatingBar value={8} />
           </li>
           <li className="flex">
             <span className="w-40">TypeScript</span>
-            <span>■■■■■■■□□□</span>
+            <RatingBar value={7} />
           </li>
           <li className="flex">
             <span className="w-40">React</span>
-            <span>■■■■■■■□□□</span>
+            <RatingBar value={7} />
           </li>
           <li className="flex">
             <span className="w-40">Next.js</span>
-            <span>■■■■■■■□□□</span>
+            <RatingBar value={7} />
           </li>
           <li className="flex">
             <span className="w-40">PHP</span>
-            <span>■■■■■■□□□□</span>
+            <RatingBar value={6} />
           </li>
           <li className="flex">
             <span className="w-40">Laravel</span>
-            <span>■■■■■■□□□□</span>
+            <RatingBar value={6} />
           </li>
         </ul>
       </section>
