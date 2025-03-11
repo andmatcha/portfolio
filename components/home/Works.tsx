@@ -1,5 +1,6 @@
 import { Tab } from "@/types/home";
 import Header from "../layout/Header";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
 type Props = {
   changeTab: (tab: Tab) => void;
@@ -18,8 +19,19 @@ const Works = ({ changeTab }: Props) => {
             </div>
             <div className="md:w-4/5">
               <h3 className="text-sm lg:text-base font-bold py-2">
-                <a href="https://saikanshoin.or.jp/service/service1/">
-                  才幹競書サービス / 一般社団法人 才幹書院
+                <a
+                  href="https://saikanshoin.or.jp/service/service1/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center"
+                >
+                  <span className="leading-none border-b border-transparent hover:border-black transition-all duration-300">
+                    才幹競書サービス / 一般社団法人 才幹書院
+                  </span>
+                  <OpenInNewIcon
+                    className="ml-1 text-gray-400"
+                    fontSize="small"
+                  />
                 </a>
               </h3>
               <p className="text-xs md:text-sm">
@@ -36,8 +48,19 @@ const Works = ({ changeTab }: Props) => {
             </div>
             <div className="md:w-4/5">
               <h3 className="text-sm lg:text-base font-bold py-2">
-                <a href="https://www.arespjt.jp">
-                  ARES Project 公式Webサイト / ARES Project
+                <a
+                  href="https://www.arespjt.jp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center"
+                >
+                  <span className="leading-none border-b border-transparent hover:border-black transition-all duration-300">
+                    ARES Project 公式Webサイト / ARES Project
+                  </span>
+                  <OpenInNewIcon
+                    className="ml-1 text-gray-400"
+                    fontSize="small"
+                  />
                 </a>
               </h3>
               <p className="text-xs md:text-sm">
