@@ -1,5 +1,4 @@
 import { Tab } from "@/types/home";
-import Header from "../layout/Header";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
 type Props = {

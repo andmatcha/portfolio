@@ -1,5 +1,4 @@
 import { Tab } from "@/types/home";
-import Header from "../layout/Header";
 
 type Props = {
   changeTab: (tab: Tab) => void;
