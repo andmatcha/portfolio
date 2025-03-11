@@ -7,7 +7,7 @@ type Props = {
 
 const About = ({ changeTab }: Props) => {
   return (
-    <div className="px-4 md:px-40">
+    <div className="px-4 md:px-40 pt-16 md:pt-20">
       <h2 className="text-3xl md:text-4xl">ABOUT</h2>
       <section className="px-2 py-2">
         <h3 className="text-2xl md:text-3xl mb-2">Profile</h3>

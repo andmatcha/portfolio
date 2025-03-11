@@ -8,7 +8,7 @@ type Props = {
 
 const Works = ({ changeTab }: Props) => {
   return (
-    <div className="w-full px-4 md:px-10 lg:px-20 xl:px-40">
+    <div className="w-full px-4 md:px-10 lg:px-20 xl:px-40 pt-16 md:pt-20">
       <h2 className="text-3xl md:text-4xl">WORKS</h2>
       <div className="w-full px-10 py-4 flex flex-col md:flex-row gap-8">
         <div className="w-full flex flex-col items-center">

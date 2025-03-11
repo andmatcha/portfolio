@@ -45,9 +45,7 @@ const Home = () => {
             </motion.div>
           ) : (
             // TOPでないタブ間の移動: アニメーションなしで常時表示
-            <div className="text-xl font-bold mb-2">
-              <Header changeTab={changeTab} />
-            </div>
+            <Header changeTab={changeTab} />
           ))}
       </AnimatePresence>
 
