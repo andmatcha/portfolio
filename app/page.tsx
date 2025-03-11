@@ -65,6 +65,17 @@ const Home = () => {
           {activeTab === "contact" && <Contact />}
         </motion.div>
       </AnimatePresence>
+
+      {/* GitHubアイコン */}
+      <div className="fixed bottom-0 right-0 w-12 md:w-16 h-12 md:h-16 m-8 md:m-10">
+        <a
+          href="https://github.com/andmatcha"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="/github-mark.svg" alt="" />
+        </a>
+      </div>
     </main>
   );
 };
