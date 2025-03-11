@@ -41,11 +41,11 @@ const Home = () => {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <Header changeTab={changeTab} />
+              <Header activeTab={activeTab} changeTab={changeTab} />
             </motion.div>
           ) : (
             // TOPでないタブ間の移動: アニメーションなしで常時表示
-            <Header changeTab={changeTab} />
+            <Header activeTab={activeTab} changeTab={changeTab} />
           ))}
       </AnimatePresence>
 
