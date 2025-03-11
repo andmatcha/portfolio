@@ -1,10 +1,4 @@
-import { Tab } from "@/types/home";
-
-type Props = {
-  changeTab: (tab: Tab) => void;
-};
-
-const Contact = ({ changeTab }: Props) => {
+const Contact = () => {
   return (
     <div className="px-4 md:px-40 pt-16 md:pt-20">
       <h2 className="text-3xl md:text-4xl">CONTACT</h2>

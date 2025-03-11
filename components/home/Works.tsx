@@ -1,11 +1,6 @@
-import { Tab } from "@/types/home";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
-type Props = {
-  changeTab: (tab: Tab) => void;
-};
-
-const Works = ({ changeTab }: Props) => {
+const Works = () => {
   return (
     <div className="w-full px-4 md:px-10 lg:px-20 xl:px-40 pt-16 md:pt-20">
       <h2 className="text-3xl md:text-4xl">WORKS</h2>

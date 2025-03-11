@@ -60,9 +60,9 @@ const Home = () => {
           className="h-full"
         >
           {activeTab === "top" && <Top changeTab={changeTab} />}
-          {activeTab === "about" && <About changeTab={changeTab} />}
-          {activeTab === "works" && <Works changeTab={changeTab} />}
-          {activeTab === "contact" && <Contact changeTab={changeTab} />}
+          {activeTab === "about" && <About />}
+          {activeTab === "works" && <Works />}
+          {activeTab === "contact" && <Contact />}
         </motion.div>
       </AnimatePresence>
     </main>
